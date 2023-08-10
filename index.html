@@ -10,19 +10,25 @@
     <title>TAMAGOCHI</title>
 </head>
 <body>
-    <div class="tamagotchi">
-        <div class="screen">
-            <div class="happiness">Felicidad: 100</div>
-            <div class="hunger">Hambre: 100</div>
-            <div class="sleep">Sueño: 100</div>
-            <div class="sprite"></div>
+    <div id="header">
+        <h1 id="petName">Virtual Pet</h1>
+        <div id="healthbar">
+          <div class="bar"></div>
+          <span class="percentage">100%</span>
         </div>
-        <div class="buttons">
-            <button class="play">Jugar</button>
-            <button class="feed">Alimentar</button>
+        <div id="staminabar">
+          <div class="bar"></div>
+          <span class="percentage">100%</span>
         </div>
-    </div>
-
-    <script src="./JavaScript/"></script>
+      </div>
+      <div id="content">
+        <div class="pet-container">
+          <img src="./assets/kuromametchi-tamagotchi.gif" alt="Pet">
+        </div>
+        <button id="feed">Feed</button>
+        <button id="play">Play</button>
+        <button id="sleep">Sleep</button>
+      </div>
+    <script src="./JavaScript/index.js"></script>
 </body>
 </html>
